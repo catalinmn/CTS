@@ -25,6 +25,7 @@ public class Main {
 		zoo.addAnimal(g2);
 		
 		zoo.feedAnimals();
+		zoo.animalWalks();
 		
 	}
 

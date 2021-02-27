@@ -9,6 +9,9 @@ public class Girafa extends Animal{
 		this.height = height;
 	}
 	
-	
+	@Override
+	public void walk() {
+		System.out.println("Girafa walks");
+	}
 
 }

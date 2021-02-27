@@ -29,4 +29,8 @@ public class Zoo {
 			this.zooKeeper.feed(a);
 	}
 
+	public void animalWalks() {
+		for(Animal a : animalList)
+			System.out.println(a.getNume() + "walks");
+	}
 }

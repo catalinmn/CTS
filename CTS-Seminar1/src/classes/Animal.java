@@ -1,6 +1,6 @@
 package classes;
 
-public abstract class Animal {
+public abstract class Animal implements Walking {
 	
 	private String nume;
 
@@ -16,4 +16,6 @@ public abstract class Animal {
 	public void setNume(String nume) {
 		this.nume = nume;
 	}
+	
+	
 }
