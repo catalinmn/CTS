@@ -3,7 +3,7 @@ package ro.ase.cts.program;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import ro.ase.cts.clase.Angajat;
+import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.readers.ReaderAngajat;
 
 
@@ -11,11 +11,13 @@ import ro.ase.cts.readers.ReaderAngajat;
 public class Program {
 
 	public static void main(String[] args) {
-		List<Angajat> listaAngajati;
+		
+		List<Aplicant> listaAplicanti;
+		
 		try {
-			listaAngajati = ReaderAngajat.readAngajati("angajati.txt");
-			for(Angajat angajat:listaAngajati)
-				System.out.println(angajat.toString());
+			listaAplicanti = ReaderAngajat.readAngajati("angajati.txt");
+			for(Aplicant aplicant:listaAplicanti)
+				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

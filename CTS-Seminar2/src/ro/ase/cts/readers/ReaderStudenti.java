@@ -7,13 +7,15 @@ import java.util.List;
 import java.util.Scanner;
 
 import ro.ase.cts.clase.Student;
+import ro.ase.cts.clase.Aplicant;
+
 
 public class ReaderStudenti {
 
-	public static List<Student> readStudents(String file) throws FileNotFoundException, NumberFormatException {
+	public static List<Aplicant> readStudents(String file) throws FileNotFoundException, NumberFormatException {
 		Scanner input = new Scanner(new File(file));
 		input.useDelimiter(",|\n");
-		List<Student> studenti = new ArrayList<Student>();
+		List<Aplicant> listaAplicanti = new ArrayList<Aplicant>();
 
 		while (input.hasNext()) {
 			String nume = input.next();
@@ -27,10 +29,10 @@ public class ReaderStudenti {
 			int an_studii = input.nextInt();
 			String facultate = (input.next()).toString();
 			Student s = new Student(nume, prenume, varsta, punctaj, nr, vect, facultate, an_studii);
-			studenti.add(s);
+			listaAplicanti.add(s);
 		}
 		input.close();
 		
-		return studenti;
+		return listaAplicanti;
 	}
 }

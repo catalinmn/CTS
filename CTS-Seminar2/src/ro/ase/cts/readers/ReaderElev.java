@@ -7,13 +7,14 @@ import java.util.List;
 import java.util.Scanner;
 
 import ro.ase.cts.clase.Elev;
+import ro.ase.cts.clase.Aplicant;
 
 public class ReaderElev {
 	
-	public static List<Elev> readPupil(String file) throws FileNotFoundException {
+	public static List<Aplicant> readPupil(String file) throws FileNotFoundException {
 		Scanner input2 = new Scanner(new File(file));
 		input2.useDelimiter(",|\n");
-		List<Elev> elevi = new ArrayList<Elev>();
+		List<Aplicant> listaAplicanti = new ArrayList<Aplicant>();
 
 		while (input2.hasNext()) {
 			String nume = input2.next();
@@ -27,11 +28,12 @@ public class ReaderElev {
 			int clasa = input2.nextInt();
 			String tutore = input2.next();
 			Elev e = new Elev(nume, prenume, varsta, punctaj, nr, vect, clasa, tutore);
-			elevi.add(e);
+			listaAplicanti.add(e);
 		}
 
 		input2.close();
-		return elevi;
+		
+		return listaAplicanti;
 	}
 
 }
