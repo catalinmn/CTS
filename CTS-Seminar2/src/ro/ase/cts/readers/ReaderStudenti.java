@@ -10,10 +10,17 @@ import ro.ase.cts.clase.Student;
 import ro.ase.cts.clase.Aplicant;
 
 
-public class ReaderStudenti {
+public class ReaderStudenti extends ReaderAplicanti{
 
-	public static List<Aplicant> readStudents(String file) throws FileNotFoundException, NumberFormatException {
-		Scanner input = new Scanner(new File(file));
+
+	public ReaderStudenti(String fileName) {
+		super(fileName);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public List<Aplicant> readAplicanti() throws FileNotFoundException {
+		Scanner input = new Scanner(new File(super.fileName));
 		input.useDelimiter(",|\n");
 		List<Aplicant> listaAplicanti = new ArrayList<Aplicant>();
 
