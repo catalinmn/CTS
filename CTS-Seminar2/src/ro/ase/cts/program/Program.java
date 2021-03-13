@@ -27,6 +27,7 @@ public class Program {
 			listaAplicanti = readAplicanti(new ReaderAngajat("angajati.txt"));
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());
+				
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
