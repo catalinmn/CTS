@@ -31,32 +31,23 @@ public class Student extends Aplicant {
 		this.facultate = facultate;
 		this.an_studii = an_studii;
 	}
+	
 	@Override
 	public String toString() {
-		return "Student: Nume=" + nume + ", Prenume=" + prenume + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte +  ", DenumireProiect=" + Arrays.toString(denumireProiect) + "Facultate=" + facultate + ", An_studii=" + an_studii ;
+		
+		final StringBuilder stringBuilder = new StringBuilder("Elev: ");
+		stringBuilder.append(super.toString())
+			.append("Facultate=")
+			.append(facultate)
+			.append(", An_studii=")
+			.append(an_studii);
+		
+		return stringBuilder.toString();
 	}
 	
-	
-//	public int finantare() {
-//		int s=20;
-//		System.out.println("Studentul "+getNume()+" "+getPrenume()+" primeste"+ this.sumaFinantata +" Euro/zi in proiect.");
-//		return s;
-//	}
-	
 	public void afisareSumaFinantata() {
-	
-//		StringBuilder stringBuilder =  new StringBuilder();
-//		stringBuilder.append("Studentul ");
-//		stringBuilder.append(getNume());
-//		stringBuilder.append(" ");
-//		stringBuilder.append(getPrenume());
-//		stringBuilder.append(" primeste ");
-//		stringBuilder.append(this.sumaFinantata);
-//		stringBuilder.append(" Euro/zi in proiect.");
-//		
-//		System.out.println(stringBuilder.toString());	
 		
-		System.out.println(super.compunereStringPentruSumaFinantata(this.sumaFinantata, "Angajatul"));
+		System.out.println(super.compunereStringPentruSumaFinantata(this.sumaFinantata, "Studentul"));
 	}
 	
 }

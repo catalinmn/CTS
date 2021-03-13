@@ -2,6 +2,7 @@ package ro.ase.cts.clase;
 
 import java.util.Arrays;
 
+
 public class Angajat extends Aplicant{
 	private String ocupatie;
 	private int salariu;
@@ -37,32 +38,21 @@ public class Angajat extends Aplicant{
 	
 	@Override
 	public String toString() {
-		return "Angajat: Nume=" + nume + ", Prenume=" + prenume
-				+ ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte + ", DenumireProiect="
-				+ Arrays.toString(denumireProiect) + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
+			
+		final StringBuilder stringBuilder = new StringBuilder("Angajat: ");
+		stringBuilder.append(super.toString())
+			.append(" Ocupatie= ")
+			.append(ocupatie)
+			.append(", salariu= ")
+			.append(salariu);
+		
+		return stringBuilder.toString();
+		
 	}
 	
-	
-//	public int finantare() {
-//		int s=10;
-//		// TODO Auto-generated method stub
-//		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-//		return s;
-//	}
-	
 	public void afisareSumaFinantata() {
-//		StringBuilder stringBuilder =  new StringBuilder();
-//		stringBuilder.append("Angajatul ");
-//		stringBuilder.append(getNume());
-//		stringBuilder.append(" ");
-//		stringBuilder.append(getPrenume());
-//		stringBuilder.append(" primeste ");
-//		stringBuilder.append(this.sumaFinantata);
-//		stringBuilder.append(" Euro/zi in proiect.");
-//		
-//		System.out.println(stringBuilder.toString());
 		
-		System.out.println(super.compunereStringPentruSumaFinantata(this.sumaFinantata, "Elevul"));
+		System.out.println(super.compunereStringPentruSumaFinantata(this.sumaFinantata, "Angajatul"));
 	}
 	
 }

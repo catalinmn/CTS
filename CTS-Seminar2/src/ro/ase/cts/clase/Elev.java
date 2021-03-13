@@ -23,9 +23,16 @@ public class Elev extends Aplicant{
 	
 	@Override
 	public String toString() {
-		return "Elev: Nume=" + nume + ", Prenume=" + prenume + ", Varsta="
-				+ varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte  + ", DenumireProiect="
-				+ Arrays.toString(denumireProiect) + "Clasa=" + clasa + ", Tutore=" + tutore;
+		
+		final StringBuilder stringBuilder = new StringBuilder("Elev: ");
+		stringBuilder.append(super.toString())
+			.append("Clasa=")
+			.append(clasa)
+			.append(", Tutore=")
+			.append(tutore);
+		
+		return stringBuilder.toString();
+		
 	}
 	
 	public Elev() {
@@ -39,25 +46,9 @@ public class Elev extends Aplicant{
 		this.tutore = tutore;
 	}
 	
-//	public int finantare() {
-//		int s=30;
-//		System.out.println("Elevul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-//		return s;
-//	}
-	
+
 	public void afisareSumaFinantata() {
-		
-//		StringBuilder stringBuilder =  new StringBuilder();
-//		stringBuilder.append("Elevul ");
-//		stringBuilder.append(getNume());
-//		stringBuilder.append(" ");
-//		stringBuilder.append(getPrenume());
-//		stringBuilder.append(" primeste ");
-//		stringBuilder.append(this.sumaFinantata);
-//		stringBuilder.append(" Euro/zi in proiect.");
-//		
-//		System.out.println(stringBuilder.toString());	
-		
+			
 		System.out.println(super.compunereStringPentruSumaFinantata(this.sumaFinantata, "Elevul"));
 	}
 	
