@@ -1,6 +1,7 @@
 package ro.ase.cts.program;
 
 import ro.ase.cts.singleton.eager.ReceptieHotel;
+import ro.ase.cts.singleton.lazy.Cont;
 
 public class Main {
 
@@ -18,6 +19,12 @@ public class Main {
 		
 		System.out.println(receptie1.toString());
 		System.out.println(receptie2.toString());
+		
+		Cont cont1 = Cont.getInstantaCont("Catalin", "RON", 100);
+		Cont cont2 = Cont.getInstantaCont("Andrei", "EUR", 10);
+		
+		System.out.println(cont1.toString());
+		System.out.println(cont2.toString());
 		
 	}
 

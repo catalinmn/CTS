@@ -48,7 +48,7 @@ public class ReceptieHotel {
 		public static  ReceptieHotel getInstanta(String numeReceptie, int etaj, String NumeHotel){
 			
 			if(instanta == null) {
-				instanta =  new ReceptieHotel("Receptie", 3, "UpperHouse");
+				instanta =  new ReceptieHotel(numeReceptie, etaj, NumeHotel);
 			}
 			
 			return instanta;
