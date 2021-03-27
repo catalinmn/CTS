@@ -17,8 +17,5 @@ public abstract class Jucator {
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	
-
 }
 
