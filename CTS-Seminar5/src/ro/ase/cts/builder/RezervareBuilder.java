@@ -1,6 +1,7 @@
 package ro.ase.cts.builder;
 
 import ro.ase.cts.common.Rezervare;
+import ro.ase.cts.common.RezervareBuilderAbstract;
 
 public class RezervareBuilder implements RezervareBuilderAbstract{
 

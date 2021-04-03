@@ -1,6 +1,4 @@
-package ro.ase.cts.builder;
-
-import ro.ase.cts.common.Rezervare;
+package ro.ase.cts.common;
 
 public interface RezervareBuilderAbstract {
 	
