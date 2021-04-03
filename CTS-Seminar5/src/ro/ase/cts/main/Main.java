@@ -2,12 +2,14 @@ package ro.ase.cts.main;
 
 import ro.ase.cts.builder.RezervareBuilder;
 import ro.ase.cts.builderV2.RezervareBuilderV2;
-import ro.ase.cts.common.Rezervare;
+import ro.ase.cts.commonBuilder.Rezervare;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		////////////////////////////////BUILDER///////////////////////////////////
 		
 		Rezervare r1 = new Rezervare(123, false, false, true, false, "Indie");
 		Rezervare r2 = new RezervareBuilder().setCodRezervare(10).setAreScaunErgonomic(true).build();
