@@ -1,4 +1,4 @@
-package ro.ase.cts.main;
+package ro.ase.cts.proxy.main;
 
 import ro.ase.cts.proxy.OperatorRezervari;
 import ro.ase.cts.proxy.ProxyOperatorRezervari;
