@@ -1,6 +1,6 @@
-package ro.ase.java.state.main;
+package ro.ase.java.state_modifContext.main;
 
-import ro.ase.java.state.Masa;
+import ro.ase.java.state_modifContext.Masa;
 
 public class Main {
 
