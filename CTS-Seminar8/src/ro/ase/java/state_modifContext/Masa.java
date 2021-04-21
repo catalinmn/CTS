@@ -42,4 +42,16 @@ public class Masa {
 			System.out.println("Masa cu codul " + this.cod +" este deja eliberata");
 		}
 	}
+	
+	
+	
+	public void ocupaMasaFaraRezervare() {
+		if(this.stare instanceof StateLibera) {
+			System.out.println("Masa cu codul " + this.cod +" este acum ocupata");
+			this.stare = new StateOcupata();
+		}
+		else {
+			System.out.println("Masa cu codul " + this.cod +" nu poate fi ocupata");
+		}
+	}
 }
