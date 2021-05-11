@@ -1,4 +1,9 @@
-package ro.ase.cts.adapter;
+package ro.ase.cts.adapter.program;
+
+import ro.ase.cts.adapter.AdapterClasa;
+import ro.ase.cts.adapter.AdapterObiect;
+import ro.ase.cts.adapter.Bilet;
+import ro.ase.cts.adapter.BiletOnline;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package ro.ase.cts.main;
+package ro.ase.cts.builder.program;
 
 import ro.ase.cts.builder.RezervareBuilder;
 import ro.ase.cts.builderV2.RezervareBuilderV2;
