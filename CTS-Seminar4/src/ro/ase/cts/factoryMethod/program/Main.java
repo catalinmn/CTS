@@ -14,7 +14,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		afiseazaJucator(new FactoryPortar(), "Mihai");
 		afiseazaJucator(new FactoryFundas(), "Daniel");
 		afiseazaJucator(new FactoryMijlocas(), "Cineva");

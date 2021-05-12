@@ -23,6 +23,10 @@ public class Main {
 		
 		Copiator bilet3 = (Bilet) bilet1.copiaza();
 		//bilet3.setCod(2); => daca initializam cu copiator nu mai avem acces la setteri si getteri
+		
+		System.out.println(bilet1);
+		System.out.println(bilet2);
+		System.out.println(bilet3);
 	}
 
 }

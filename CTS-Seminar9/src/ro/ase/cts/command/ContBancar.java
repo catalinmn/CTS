@@ -31,4 +31,8 @@ public class ContBancar {
 		System.out.println("A fost depusa suma de " + suma);
 	}
 	
+	public void anulareComanda(int index) {
+		System.out.println("A fost anulata comanda!");
+	}
+	
 }

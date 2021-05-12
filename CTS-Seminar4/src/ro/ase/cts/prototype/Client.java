@@ -18,7 +18,7 @@ public class Client implements Copiator{
 
 	@Override
 	public Copiator copiaza() {
-		// TODO Auto-generated method stub
+		
 		Client client = new Client();
 		client.nume = this.nume;
 		client.varsta = this.varsta;

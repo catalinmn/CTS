@@ -16,4 +16,9 @@ public class ComandaDepunere implements IComanda{
 		cont.depunere(sumaDepusa);
 	}
 
+	@Override
+	public void undo(int index) {
+		cont.anulareComanda(index);		
+	}
+
 }

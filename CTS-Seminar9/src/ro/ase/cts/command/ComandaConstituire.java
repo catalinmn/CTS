@@ -16,4 +16,9 @@ public class ComandaConstituire implements IComanda{
 		cont.constituire(sumaInitiala);
 	}
 
+	@Override
+	public void undo(int index) {
+		cont.anulareComanda(index);		
+	}
+
 }

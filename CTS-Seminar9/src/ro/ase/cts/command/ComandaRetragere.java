@@ -16,4 +16,9 @@ public class ComandaRetragere implements IComanda{
 		cont.retragere(sumaRetrasa);
 	}
 
+	@Override
+	public void undo(int index) {
+		cont.anulareComanda(index);		
+	}
+
 }
