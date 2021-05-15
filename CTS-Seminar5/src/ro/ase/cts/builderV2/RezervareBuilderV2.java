@@ -1,9 +1,9 @@
 package ro.ase.cts.builderV2;
 
-import ro.ase.cts.commonBuilder.Rezervare;
-import ro.ase.cts.commonBuilder.RezervareBuilderAbstract;
+import ro.ase.cts.builder.Rezervare;
+import ro.ase.cts.commonBuilder.IRezervareBuilder;
 
-public class RezervareBuilderV2 implements RezervareBuilderAbstract{
+public class RezervareBuilderV2 implements IRezervareBuilder{
 	
 	private int codRezervare;
 	private boolean areMancareInclusa;
@@ -11,8 +11,6 @@ public class RezervareBuilderV2 implements RezervareBuilderAbstract{
 	private boolean areScaunErgonomic;
 	private boolean areMuzicaAmbientala;
 	private String genMuzica;
-	
-	
 	
 	public RezervareBuilderV2() {
 		super();

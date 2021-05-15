@@ -1,4 +1,4 @@
-package ro.ase.cts.commonBuilder;
+package ro.ase.cts.builder;
 
 public class Rezervare {
 	

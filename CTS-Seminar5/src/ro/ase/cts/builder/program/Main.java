@@ -1,8 +1,8 @@
 package ro.ase.cts.builder.program;
 
+import ro.ase.cts.builder.Rezervare;
 import ro.ase.cts.builder.RezervareBuilder;
 import ro.ase.cts.builderV2.RezervareBuilderV2;
-import ro.ase.cts.commonBuilder.Rezervare;
 
 public class Main {
 
