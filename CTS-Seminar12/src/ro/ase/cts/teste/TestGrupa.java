@@ -4,7 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+import ro.ase.cts.categories.TesteGetPromovabilitate;
+import ro.ase.cts.categories.TesteUrgente;
 import ro.ase.cts.clase.Grupa;
 import ro.ase.cts.clase.Student;
 
@@ -12,6 +15,7 @@ public class TestGrupa {
 	
 
 	@Test
+	@Category(TesteUrgente.class)
 	public void testConstructorRight() {
 		Grupa grupa = new Grupa(1078);
 		assertEquals(1078, grupa.getNrGrupa());
@@ -47,6 +51,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category({TesteGetPromovabilitate.class, TesteUrgente.class})
 	public void testPromovabilitateRight() {
 		Grupa grupa = new Grupa(1078);
 		for (int i =0; i<8; i++) {
@@ -64,6 +69,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category(TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateRight() {
 		Grupa grupa = new Grupa(1078);
 		for (int i =0; i<8; i++) {
@@ -76,6 +82,7 @@ public class TestGrupa {
 	}
 
 	@Test
+	@Category(TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateLeft() {
 		Grupa grupa = new Grupa(1078);
 		for (int i =0; i<8; i++) {
@@ -88,6 +95,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category(TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateInverse() {
 		int nrIntegralisti = 31;
 		int nrRestantieri = 2;
@@ -107,6 +115,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category(TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateError() {
 		Grupa grupa = new Grupa(1078);
 		
@@ -114,6 +123,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category(TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateCardinalityAreRestanta() {
 		Grupa grupa = new Grupa(1078);
 		Student student = new Student();
@@ -123,6 +133,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category(TesteGetPromovabilitate.class)
 	public void testGetPromovabilitateCardinalityNuAreRestanta() {
 		Grupa grupa = new Grupa(1078);
 		Student student = new Student();
